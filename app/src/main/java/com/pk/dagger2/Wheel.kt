@@ -2,4 +2,4 @@ package com.pk.dagger2
 
 import javax.inject.Inject
 
-class Wheel @Inject constructor()
+class Wheel constructor(val rims: Rims, val tires: Tires)
