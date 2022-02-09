@@ -15,9 +15,10 @@ class Car @Inject constructor(val engine: Engine, val wheel: Wheel){
     }
 }
 
-class PetrolEngine @Inject constructor() : Engine {
+class PetrolEngine constructor(val horsePower: Int) : Engine {
+
     override fun start() {
-        println("Petrol Engine started")
+        println("Petrol Engine started $horsePower")
     }
 }
 
